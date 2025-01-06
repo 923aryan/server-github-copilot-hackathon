@@ -37,7 +37,7 @@ env sample
 3. **Azure Storage**
 
 
-### **Azure CosmosDB For Mongodb **
+### **Azure CosmosDB For Mongodb**
 
 - **Service Used**: Azure Blob Storage
 - **Purpose**: Provides a globally distributed, multi-model database service with low latency and high availability, supporting MongoDB APIs
@@ -61,7 +61,7 @@ env sample
   - `EMAIL_KEY`
   - `ACS_CONNECTION_STRING`
   - `VERIFIED_ACS_SENDER_ADDRESS`
-  
+
 ### **GitHub Authentication**
 
 - **Service Used**: GitHub OAuth
