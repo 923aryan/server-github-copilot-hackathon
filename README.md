@@ -13,6 +13,7 @@ bun install
 bun run index.ts
 ```
 
+
 add .env file 
 ```sample```
 
@@ -29,6 +30,21 @@ env sample
 ```AZURE_BLOB_CONNECTION_STRING```
 ```AZURE_BLOB_CONTAINER_NAME```
 
+## Azure Services Used:
+
+1. **Azure CosmosDB for MongoDB** - For database
+2. **Azure Communication Services** - For Email and Communication
+3. **Azure Storage**
+
+
+### **Azure CosmosDB For Mongodb **
+
+- **Service Used**: Azure Blob Storage
+- **Purpose**: Provides a globally distributed, multi-model database service with low latency and high availability, supporting MongoDB APIs
+- **Environment Variables**: 
+  - `COSMOS_MONGODB_USERNAME`
+  - `COSMOS_MONGODB_PASSWORD`
+
 ### **Azure Blob Storage**
 
 - **Service Used**: Azure Blob Storage
@@ -37,6 +53,15 @@ env sample
   - `AZURE_BLOB_CONNECTION_STRING`
   - `AZURE_BLOB_CONTAINER_NAME`
 
+### **Email Service**
+
+- **Service Used**: Email service (Azure communication services)
+- **Purpose**: Used for sending emails, likely for notifications, user confirmations, or alerts.
+- **Environment Variables**: 
+  - `EMAIL_KEY`
+  - `ACS_CONNECTION_STRING`
+  - `VERIFIED_ACS_SENDER_ADDRESS`
+  
 ### **GitHub Authentication**
 
 - **Service Used**: GitHub OAuth
@@ -52,12 +77,6 @@ env sample
 - **Environment Variables**: 
   - `JWT_SECRET`
 
-### **Email Service**
-
-- **Service Used**: Email service (Azure communication services)
-- **Purpose**: Used for sending emails, likely for notifications, user confirmations, or alerts.
-- **Environment Variables**: 
-  - `EMAIL_KEY`
 
 This setup ensures that your application not only scales efficiently but also maintains high security and provides a seamless user experience through integrated communication and authentication services. Ensure all environment variables are securely managed, especially those containing sensitive information like passwords and secrets.
 
