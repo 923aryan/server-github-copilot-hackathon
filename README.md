@@ -15,6 +15,19 @@ bun run index.ts
 add .env file 
 ```sample```
 
+env sample
+```COSMOS_MONGODB_USERNAME```
+```COSMOS_MONGODB_PASSWORD```
+```GITHUB_ID```
+```GITHUB_SECRET```
+```JWT_SECRET```
+```CLIENT_ORIGIN```
+```EMAIL_KEY```
+```ACS_CONNECTION_STRING```
+```VERIFIED_ACS_SENDER_ADDRESS```
+```AZURE_BLOB_CONNECTION_STRING```
+```AZURE_BLOB_CONTAINER_NAME```
+
 ### **Azure Blob Storage**
 
 - **Service Used**: Azure Blob Storage
@@ -38,16 +51,9 @@ add .env file
 - **Environment Variables**: 
   - `JWT_SECRET`
 
-### **Client Origin Handling**
-
-- **Service Used**: CORS (Cross-Origin Resource Sharing)
-- **Purpose**: Manages which domains can access the application's resources, crucial for web applications that fetch resources from different origins.
-- **Environment Variables**: 
-  - `CLIENT_ORIGIN`
-
 ### **Email Service**
 
-- **Service Used**: Email service (specific service not mentioned, assume a generic email service)
+- **Service Used**: Email service (Azure communication services)
 - **Purpose**: Used for sending emails, likely for notifications, user confirmations, or alerts.
 - **Environment Variables**: 
   - `EMAIL_KEY`
