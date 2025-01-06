@@ -10,7 +10,7 @@ To run:
 
 ```bash
 bun install
-bun run index.ts
+bun run dev
 ```
 
 
